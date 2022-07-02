@@ -1,7 +1,17 @@
 /* /=========================================== BASIC TO THE CODES START ================================= \ */
+@font-face {
+  font-family: 'Lora';
+  src: url("../FONT/LORA/static/Lora-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Oxygen';
+  src: url("../FONT/OXYGEN/Oxygen-Light.ttf");
+}
+
 *,
 *::after,
-*::before{
+*::before {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -19,9 +29,164 @@ body {
   scroll-behavior: smooth;
 }
 
+:root {
+  --link-color: #FFFFFF;
+  --link-bg-color: #DD783F;
+  --section-link-color: #768088;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 100px;
+  padding: 0 200px;
 }
+
 /* /=========================================== BASIC TO THE CODES END =================================== \ */
+
+
+/* /=========================================== HEADER AND MAIN TO THE CODES END ========================== \ */
+.main {
+  background-image: url("../IMG/escape-bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 667px;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+}
+
+.nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__interno {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  color: var(--link-color);
+  line-height: 100px;
+}
+
+.nav .nav__list .nav__item {
+  line-height: 100px;
+  display: inline-block;
+}
+
+.nav .nav__list .nav__item .nav__link {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--link-color);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  transition: all .3s linear;
+}
+
+.nav .nav__list .nav__item .nav__link:hover {
+  color: var(--link-bg-color);
+}
+
+.main__content {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__content_title {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 51px;
+  color: var(--link-color);
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.main__content_paragraph {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.63);
+  margin: 25px 0;
+}
+
+.main__content_link {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--link-color);
+  background-color: var(--link-bg-color);
+  border-radius: 3px;
+  padding: 15px 30px;
+  transition: all .3s linear;
+  border: 1px solid var(--link-bg-color);
+}
+
+.main__content_link:hover {
+  background-color: transparent;
+  color: var(--link-bg-color);
+
+}
+
+/* /=========================================== HEADER AND MAIN TO THE CODES END ========================== \ */
+
+
+/* /=========================================== SECTION TO THE CODES START ================================ \ */
+.section__link {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__link_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+}
+
+.section__link .section__link_list .section__link_item {
+  display: inline-block;
+}
+
+.section__link .section__link_list .section__link_item .section__link_href {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 65px;
+  text-align: center;
+  color: var(--section-link-color);
+  padding: 0 50px;
+  transition: all .3s linear;
+}
+
+.section__link .section__link_list .section__link_item .section__link_href:hover {
+  color: var(--link-bg-color);
+}
+
+/* /=========================================== SECTION TO THE CODES END ================================== \ */
