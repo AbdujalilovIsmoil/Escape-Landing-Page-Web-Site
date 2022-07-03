@@ -33,13 +33,27 @@ body {
   --link-color: #FFFFFF;
   --link-bg-color: #DD783F;
   --section-link-color: #768088;
+  --section-title-border-bottom-color: #DEDEDE;
+  --section-second-link-color: #DD783F;
 }
 
 .container {
   width: 100%;
   max-width: 1440px;
+  margin: 0 auto;
   padding: 0 200px;
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--link-bg-color);
+  border-radius: 0 0 50px 50px;
+}
+
 
 /* /=========================================== BASIC TO THE CODES END =================================== \ */
 
@@ -187,6 +201,177 @@ body {
 
 .section__link .section__link_list .section__link_item .section__link_href:hover {
   color: var(--link-bg-color);
+}
+
+/* /=========================================== SECTION TO THE CODES END ================================== \ */
+
+/* /=========================================== SECTION TO THE CODES START ================================ \ */
+.section__img_container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, auto);
+}
+
+.section__img_box_first {
+  background-image: url("../IMG/section-first-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 460px;
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 20px 15px 20px;
+
+}
+
+.section__img_box_second {
+  background-image: url("../IMG/section-second-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 460px;
+  width: 100%;
+  height: 280px;
+  border-radius: 3px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px 15px 20px;
+}
+
+.section__img_box_second_box_link {
+  padding: 6px 9px 7px 9px;
+  background-color: var(--section-second-link-color);
+  color: var(--link-color);
+  font-family: 'Oxygen';
+  font-style: normal;
+  width: 87px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  text-transform: uppercase;
+  transition: all .3s linear;
+  border: 1px solid var(--section-second-link-color);
+}
+
+.section__img_box_second_title {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 30px;
+  color: var(--link-color);
+}
+
+.section__img_box_second_paragraph {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.section__img_box_second_box_link:hover {
+  background-color: transparent;
+  color: var(--section-second-link-color);
+}
+
+.section__img_title {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 60px 0 40px 0;
+  position: relative;
+}
+
+.section__img_title::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 188px;
+  transform: translateY(40px) translateX(-175px);
+  background-color: var(--section-title-border-bottom-color);
+}
+
+.section__img_box_first_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__img_box_second_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__img_box_first_content_img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section__img_box_second_content_img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section__img_box_first_content_img img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.section__img_box_second_content_img img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.section__img_box_second_content_paragraph {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 35px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 6px 0 12px 0;
+}
+
+.section__img_box_first_title {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 30px;
+  color: var(--link-color);
+}
+
+.section__img_box_first_paragraph {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 6px 0 12px 0;
+}
+
+.section__img_box_first_content_paragraph {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 35px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* /=========================================== SECTION TO THE CODES END ================================== \ */
