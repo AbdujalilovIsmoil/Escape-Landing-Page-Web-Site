@@ -12,10 +12,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./CSS/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Escape</title>
   </head>
   <body>
-
     <!-- /===================================== HEADER AND MAIN TO THE CODES START ======================== \ -->
     <main class="main">
       <header class="header">
@@ -27,13 +27,13 @@
                 <a class="nav__link" href="#">Home</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Categories</a>
+                <a class="nav__link" href="#Categories">Categories</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">About</a>
+                <a class="nav__link" href="#About">About</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Contact</a>
+                <a class="nav__link" href="#Contact">Contact</a>
               </li>
               <i class="fa fa-bars"></i>
             </ul>
@@ -48,6 +48,26 @@
         <a class="main__content_link" href="#"> View Latest Posts </a>
       </div>
     </main>
+    <!-- /===================================== SECRET AND MAIN TO THE CODES END ======================== \ -->
+    <div class="secret">
+      <ul class="secret__list">
+        <li class="secret__item">
+          <a class="secret__link" href="#">Home</a>
+        </li>
+        <li class="secret__item">
+          <a class="secret__link" href="#Categories">Categories</a>
+        </li>
+        <li class="secret__item">
+          <a class="secret__link" href="#About">About</a>
+        </li>
+        <li class="secret__item">
+          <a class="secret__link" href="#Contact">Contact</a>
+        </li>
+        <i class="fa fa-times"></i>
+      </ul>
+    </div>
+    <!-- /===================================== SECRET TO THE CODES END ================================= \ -->
+
     <!-- /===================================== HEADER AND MAIN TO THE CODES END ======================== \ -->
 
     <!-- /===================================== SECTION TO THE CODES START ================================ \ -->
@@ -81,11 +101,16 @@
 
     <!-- /===================================== SECTION TO THE CODES START ================================ \ -->
     <div class="container">
-      <section class="section">
+      <section class="section" id="Categories">
         <div class="section__img">
           <h1 class="section__img_title">Featured Posts</h1>
           <div class="section__img_container">
-            <div class="section__img_box_first">
+            <div
+              class="section__img_box_first"
+              data-aos="flip-left"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            >
               <h1 class="section__img_box_first_title">The Road Ahead</h1>
               <p class="section__img_box_first_paragraph">
                 The road ahead might be paved - it might not be.
@@ -102,7 +127,12 @@
                 </p>
               </div>
             </div>
-            <div class="section__img_box_second">
+            <div
+              class="section__img_box_second"
+              data-aos="flip-right"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            >
               <a href="#" class="section__img_box_second_box_link">
                 Adventure
               </a>
@@ -131,12 +161,17 @@
     <!-- /===================================== SECTION TO THE CODES END ================================== \ -->
 
     <!-- /===================================== SECTION TO THE CODES START ================================ \ -->
-    <section class="section">
+    <section class="section" id="About">
       <div class="container">
         <h1 class="section__title">Most Recent</h1>
         <div class="section__images">
           <div class="section__images_container">
-            <div class="section__images_box">
+            <div
+              class="section__images_box"
+              data-aos="zoom-out-down"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            >
               <img
                 class="section__images_box_img"
                 src="./IMG/section-box1.jpg"
@@ -164,7 +199,12 @@
                 </div>
               </div>
             </div>
-            <div class="section__images_box">
+            <div
+              class="section__images_box"
+              data-aos="zoom-out-down"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            >
               <img
                 class="section__images_box_img"
                 src="./IMG/section-box2.jpg"
@@ -192,7 +232,12 @@
                 </div>
               </div>
             </div>
-            <div class="section__images_box">
+            <div
+              class="section__images_box"
+              data-aos="zoom-out-down"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            >
               <img
                 class="section__images_box_img"
                 src="./IMG/section-box3.jpg"
@@ -220,7 +265,12 @@
                 </div>
               </div>
             </div>
-            <div class="section__images_box">
+            <div
+              class="section__images_box"
+              data-aos="zoom-out-down"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            >
               <img
                 class="section__images_box_img"
                 src="./IMG/section-box4.jpg"
@@ -248,7 +298,12 @@
                 </div>
               </div>
             </div>
-            <div class="section__images_box">
+            <div
+              class="section__images_box"
+              data-aos="zoom-out-down"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            >
               <img
                 class="section__images_box_img"
                 src="./IMG/section-box5.jpg"
@@ -276,7 +331,12 @@
                 </div>
               </div>
             </div>
-            <div class="section__images_box">
+            <div
+              class="section__images_box"
+              data-aos="zoom-out-down"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            >
               <img
                 class="section__images_box_img"
                 src="./IMG/section-box6.jpg"
@@ -312,7 +372,7 @@
     <!-- /===================================== SECTION TO THE CODES END ================================== \ -->
 
     <!-- /===================================== FOOTER TO THE CODES START ================================ \ -->
-    <footer class="footer">
+    <footer class="footer" id="Contact">
       <div class="footer__blur">
         <div class="container">
           <div class="footer__container">
@@ -337,6 +397,7 @@
     </footer>
 
     <!-- /===================================== FOOTER TO THE CODES END ================================== \ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./JS/index.js"></script>
   </body>
 </html>

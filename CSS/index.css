@@ -71,8 +71,47 @@ body {
 
 /* /=========================================== BASIC TO THE CODES END =================================== \ */
 
+/* /=========================================== SECRETE AND MAIN TO THE CODES START ======================== \ */
+.secret {
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--link-color);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all .4s linear;
+  transform: translateX(-100%);
+}
 
-/* /=========================================== HEADER AND MAIN TO THE CODES END ========================== \ */
+.secret.active {
+  transform: translateX(0);
+}
+
+.secret .secret__list .secret__item {
+  line-height: 35px;
+}
+
+.secret .secret__list .secret__item .secret__link {
+  color: var(--link-bg-color);
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  transition: all .3s linear;
+
+}
+
+/* /=========================================== SECRETE AND MAIN TO THE CODES END ========================== \ */
+
+/* /=========================================== HEADER AND MAIN TO THE CODES START ======================== \ */
 .main {
   background-image: url("../IMG/escape-bg-img.jpg");
   background-size: cover;
@@ -208,6 +247,16 @@ body {
   margin: 0 0 15px 0;
   display: none;
 }
+
+.fa-times {
+  color: var(--link-bg-color);
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
 
 .header.active .fa-bars {
   color: var(--link-bg-color);
@@ -683,7 +732,7 @@ body {
 
 @media (max-width: 515px) {
   .container {
-    padding: 0 25px;
+    padding: 0 20px;
   }
 
   .footer__container {
@@ -868,7 +917,7 @@ body {
 
 @media (max-width: 310px) {
   .container {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   .section__img_box_first {
@@ -911,13 +960,13 @@ body {
 
   .section__img_box_second_content {
     display: grid;
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
   }
 
   .section__img_box_first_content {
     display: grid;
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
   }
 
