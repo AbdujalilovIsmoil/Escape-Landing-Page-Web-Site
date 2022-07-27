@@ -53,6 +53,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 200px;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
