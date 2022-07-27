@@ -201,6 +201,18 @@ body {
 
 }
 
+.fa-bars {
+  color: var(--link-color);
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0 0 15px 0;
+  display: none;
+}
+
+.header.active .fa-bars {
+  color: var(--link-bg-color);
+}
+
 /* /=========================================== HEADER AND MAIN TO THE CODES END ========================== \ */
 
 
@@ -341,12 +353,14 @@ body {
 }
 
 .section__img_box_first_content {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: space-between;
 }
 
 .section__img_box_second_content {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: space-between;
 }
 
@@ -510,3 +524,422 @@ body {
 
 
 /* /=========================================== SECTION TO THE CODES END ================================== \ */
+
+/* /=========================================== FOOTER TO THE CODES START ================================ \ */
+.footer {
+  background: url(../IMG/footer.jpg), #4D565D;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 378px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer__blur {
+  background: rgba(35, 47, 56, 0.6);
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  align-items: center;
+  min-height: 89px;
+  width: 100%;
+
+}
+
+.footer__intro {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  color: var(--link-color);
+}
+
+.footer__container .footer__list .footer__item {
+  display: inline-block;
+}
+
+.footer__container .footer__list .footer__item .footer__link {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 26px;
+  text-align: right;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 10px;
+}
+
+/* /=========================================== FOOTER TO THE CODES END ================================== \ */
+
+/* /=========================================== RESPONSIVE TO THE CODES START ============================= \ */
+@media (max-width: 1308px) {
+  .section__images_container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 0 0 100px 0;
+    justify-content: center;
+  }
+
+  .section__images_box {
+    /* height: 291px; */
+    height: 350px;
+    max-width: 370px;
+    width: 100%;
+    background: var(--link-color);
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 9%);
+    border-radius: 3px;
+    margin: 15px 30px;
+    position: relative;
+  }
+
+  .section__images_box_img {
+    max-width: 370px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1260px) {
+  .section__img_container {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (max-width: 1170px) {
+  .section__images_container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    margin: 0 0 100px 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1110px) {
+  .nav .nav__list .nav__item .nav__link {
+    display: none;
+  }
+
+  .container {
+    padding: 0 150px;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+}
+
+@media (max-width: 905px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .section__link .section__link_list .section__link_item .section__link_href {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 65px;
+    text-align: center;
+    color: var(--section-link-color);
+    padding: 0 50px;
+    transition: all .3s linear;
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  .main__content_title {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 51px;
+    color: var(--link-color);
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .main__content_paragraph {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.63);
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 515px) {
+  .container {
+    padding: 0 25px;
+  }
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: flex-start;
+    align-items: center;
+    height: 89px;
+    width: 100%;
+  }
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 225px;
+    width: 100%;
+  }
+
+  .footer__container .footer__list .footer__item {
+    display: block;
+  }
+
+  .section__img_box_first {
+    background-image: url(../IMG/section-first-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 375px;
+    height: 280px;
+    background-size: cover;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 20px 15px 20px;
+  }
+
+  .section__images_box {
+    height: 350px;
+    width: 375px;
+    background: var(--link-color);
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 9%);
+    border-radius: 3px;
+    margin: 15px 30px;
+    position: relative;
+  }
+}
+
+@media (max-width: 440px) {
+  .main__content_title {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 51px;
+    color: var(--link-color);
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .main__content_paragraph {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.63);
+    margin: 15px 0;
+  }
+
+  .main__content {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .main__content_paragraph {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.63);
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .section__img_box_first {
+    background-image: url(../IMG/section-first-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 300px;
+    height: 280px;
+    background-size: cover;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 20px 15px 20px;
+  }
+
+  .section__img_box_second {
+    background-image: url(../IMG/section-second-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 300px;
+    height: 280px;
+    border-radius: 3px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 15px 20px;
+  }
+
+  .section__images_box {
+    height: 350px;
+    width: 300px;
+    background: var(--link-color);
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 9%);
+    border-radius: 3px;
+    margin: 15px 30px;
+    position: relative;
+  }
+
+  .section__img_box_first_paragraph {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 6px 0 12px 0;
+  }
+
+  .section__img_box_second_paragraph {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .section__img_box_first_title {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--link-color);
+  }
+
+  .section__img_box_second_title {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--link-color);
+  }
+}
+
+@media (max-width: 330px) {
+  .main__content_title {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 51px;
+    color: var(--link-color);
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 310px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .section__img_box_first {
+    background-image: url(../IMG/section-first-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 250px;
+    height: 280px;
+    background-size: cover;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 20px 15px 20px;
+  }
+
+  .section__img_box_second {
+    background-image: url(../IMG/section-second-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 250px;
+    height: 280px;
+    border-radius: 3px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 15px 20px;
+  }
+
+  .section__img_box_first_paragraph {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 6px 0 12px 0;
+  }
+
+  .section__img_box_second_content {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: space-between;
+  }
+
+  .section__img_box_first_content {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: space-between;
+  }
+
+  .section__img_box_second_content_paragraph {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 0 0;
+  }
+
+  .section__images_box {
+    height: 350px;
+    width: 250px;
+    background: var(--link-color);
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 9%);
+    border-radius: 3px;
+    margin: 15px 30px;
+    position: relative;
+  }
+}
+
+/* /=========================================== RESPONSIVE TO THE CODES END =============================== \ */
