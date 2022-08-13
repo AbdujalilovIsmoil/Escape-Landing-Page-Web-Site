@@ -10,17 +10,20 @@ window.addEventListener("load", () => {
   let timesButton = document.querySelector(".fa-times");
   let secretNavbar = document.querySelector(".secret");
   let linkButtons = document.querySelectorAll(".secret__link");
+  let body = document.querySelector("body");
 
   faBarsButton.addEventListener("click", openButton);
 
   function openButton() {
     secretNavbar.classList.add("active");
+    body.style.overflow = "hidden";
   }
 
   timesButton.addEventListener("click", closeButton);
 
   function closeButton() {
     secretNavbar.classList.remove("active");
+    body.style.overflow = "";
   }
 
   for (let i = 0; i < linkButtons.length; i++) {
@@ -29,6 +32,7 @@ window.addEventListener("load", () => {
 
   function linkButtonCloseNavbar() {
     secretNavbar.classList.remove("active");
+    body.style.overflow = "";
   }
 
   // AOS LIBRARY TO THE CODE
