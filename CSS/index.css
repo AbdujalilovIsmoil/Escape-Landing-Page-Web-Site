@@ -1,4 +1,4 @@
-/* /=========================================== BASIC TO THE CODES START ================================= \ */
+/* *****BASIC TO THE CODES END****** */
 @font-face {
   font-family: 'Lora';
   src: url("../FONT/LORA/static/Lora-Medium.ttf");
@@ -70,9 +70,9 @@ body {
   min-height: 200vh;
 }
 
-/* /=========================================== BASIC TO THE CODES END =================================== \ */
+/* *****BASIC TO THE CODES END****** */
 
-/* /=========================================== SECRETE AND MAIN TO THE CODES START ======================== \ */
+/* *****SECTION****** */
 .secret {
   min-height: 100vh;
   width: 100%;
@@ -110,9 +110,9 @@ body {
 
 }
 
-/* /=========================================== SECRETE AND MAIN TO THE CODES END ========================== \ */
+/* *****SECTION****** */
 
-/* /=========================================== HEADER AND MAIN TO THE CODES START ======================== \ */
+/* *****HEADER****** */
 .main {
   background-image: url("../IMG/escape-bg-img.jpg");
   background-size: cover;
@@ -263,10 +263,10 @@ body {
   color: var(--link-bg-color);
 }
 
-/* /=========================================== HEADER AND MAIN TO THE CODES END ========================== \ */
+/* *****HEADER****** */
 
 
-/* /=========================================== SECTION TO THE CODES START ================================ \ */
+/* *****SECTION****** */
 .section__link {
   height: 65px;
   width: 100%;
@@ -303,9 +303,9 @@ body {
   color: var(--link-bg-color);
 }
 
-/* /=========================================== SECTION TO THE CODES END ================================== \ */
+/* *****SECTION****** */
 
-/* /=========================================== SECTION TO THE CODES START ================================ \ */
+/* *****SECTION****** */
 .section__img_container {
   display: grid;
   gap: 20px;
@@ -573,9 +573,9 @@ body {
 }
 
 
-/* /=========================================== SECTION TO THE CODES END ================================== \ */
+/* *****SECTION****** */
 
-/* /=========================================== FOOTER TO THE CODES START ================================ \ */
+/* *****FOOTER****** */
 .footer {
   background: url(../IMG/footer.jpg), #4D565D;
   background-repeat: no-repeat;
@@ -628,9 +628,9 @@ body {
   padding: 0 10px;
 }
 
-/* /=========================================== FOOTER TO THE CODES END ================================== \ */
+/* *****FOOTER****** */
 
-/* /=========================================== RESPONSIVE TO THE CODES START ============================= \ */
+/* *****RESPONSIVE****** */
 @media (max-width: 1308px) {
   .section__images_container {
     display: grid;
@@ -992,4 +992,4 @@ body {
   }
 }
 
-/* /=========================================== RESPONSIVE TO THE CODES END =============================== \ */
+/* *****RESPONSIVE****** */

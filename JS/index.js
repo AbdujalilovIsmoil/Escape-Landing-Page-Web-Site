@@ -1,4 +1,4 @@
-// ESCAPE WEB-SITE TO THE CODES START
+// ESCAPE WEB-SITE TO THE CODES
 
 window.addEventListener("load", () => {
   window.addEventListener("scroll", () => {
