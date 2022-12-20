@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ****META TAGS**** -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -35,12 +36,15 @@
     <meta name="og:description" content="Escape Beautiful Landing-Page" />
     <meta name="og:image" content="./IMG/FAVICON/favicon.ico" />
     <meta name="og:site_name" content="space" />
-    <link rel="stylesheet" href="./CSS/index.css" />
+    <!-- ****NORMALIZE CSS**** -->
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <!-- ****MAIN CSS**** -->
+    <link rel="stylesheet" href="./CSS/index.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Escape</title>
   </head>
   <body>
-    <!-- *****HEADER****** -->
+    <!-- *****HEADER START****** -->
     <main class="main">
       <header class="header">
         <div class="container">
@@ -64,6 +68,9 @@
           </nav>
         </div>
       </header>
+      <!-- *****HEADER END**** -->
+
+      <!-- *****MAIN START***** -->
       <div class="main__content">
         <h1 class="main__content_title">Let's do it together.</h1>
         <p class="main__content_paragraph">
@@ -72,7 +79,9 @@
         <a class="main__content_link" href="#"> View Latest Posts </a>
       </div>
     </main>
-    <!-- *****NAVBAR****** -->
+    <!-- *****MAIN END***** -->
+
+    <!-- *****SECRET NAVBAR START****** -->
     <div class="secret">
       <ul class="secret__list">
         <li class="secret__item">
@@ -90,10 +99,9 @@
         <i class="fa fa-times"></i>
       </ul>
     </div>
-    <!-- *****NAVBAR****** -->
-    <!-- *****HEADER****** -->
+    <!-- *****SECRET NAVBAR END****** -->
 
-    <!-- *****SECTION****** -->
+    <!-- *****SECTION START****** -->
     <div class="container">
       <section class="section">
         <div class="section__link">
@@ -120,9 +128,7 @@
         </div>
       </section>
     </div>
-    <!-- *****SECTION****** -->
 
-    <!-- *****SECTION****** -->
     <div class="container">
       <section class="section" id="Categories">
         <div class="section__img">
@@ -181,9 +187,7 @@
         </div>
       </section>
     </div>
-    <!-- *****SECTION****** -->
 
-    <!-- *****SECTION****** -->
     <section class="section" id="About">
       <div class="container">
         <h1 class="section__title">Most Recent</h1>
@@ -392,9 +396,9 @@
         </div>
       </div>
     </section>
-    <!-- *****SECTION****** -->
+    <!-- *****SECTION END****** -->
 
-    <!-- *****FOOTER****** -->
+    <!-- *****FOOTER START****** -->
     <footer class="footer" id="Contact">
       <div class="footer__blur">
         <div class="container">
@@ -418,8 +422,10 @@
         </div>
       </div>
     </footer>
+    <!-- *****FOOTER END******* -->
 
-    <!-- *****FOOTER******* -->
+    <!-- ****JAVASCRIPT LINKS**** -->
+    <script src="./JS/utilits.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./JS/index.js"></script>
   </body>
